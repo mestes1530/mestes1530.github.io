@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!-- Materialize Stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <style>
+        body {
+            background-image: url("https://prioritymovingservices.com/wp-content/uploads/2014/05/st-johns-moving-guide.jpg");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: cover;
+        }
+        #nav-bar {
+            padding-left:5%;
+        }
+        #education {
+            padding:2%;
+        }
+        .card {
+            width:20%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+  <nav>
+    <div id="nav-bar" class="nav-wrapper purple darken-1">
+      <a href="#" class="brand-logo">Mitchell Estes</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/Python%20Labs">Python</a></li>
+        <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/HTML%20%2B%20CSS%20Labs">HTML + CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="main-div">
+      <div id="education">
+          <h2>Education</h2>
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://static1.squarespace.com/static/545d41e1e4b0f8d97a3ba8e3/t/55d3b3a6e4b0ddce73a16060/1439937461315/?format=750w">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Bachelor's of Science in Computer Science from University of Portland<i class="material-icons right">🏫</i></span>
+              <p>At <a href="#">University of Portland</a> I studied computer science and...</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p><a href="#">Links to Projects</a></p>
+            </div>
+          </div>
+      </div>
+  </div>
 </body>
 </html>
