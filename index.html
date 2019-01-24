@@ -15,6 +15,8 @@
   			-moz-background-size: cover;
   			-o-background-size: cover;
   			background-size: cover;
+  			color: white;
+  			text-shadow: 1px 1px DarkViolet;
 		}
 		#navbar-name {
 			color: white;
@@ -30,9 +32,18 @@
 			background-color: rgba(0, 0, 0, 0.7);
 			border-style: outset; 
 		}
-		.card {
-			color: blue;
-			padding: : 1%;
+		#my-pic {
+			border: 2px solid DarkViolet;
+  			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+		}
+		.card-img-top {
+			width: 100%;
+			border: 2px solid DarkViolet;
+		}
+		.card-body {
+			padding: 2%;
 		}
 		.btn-color {
 			color: white;
@@ -42,7 +53,7 @@
     	</style>
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar sticky-top navbar-inverse">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -54,57 +65,82 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Home</a></li>
 		        <li class="dropdown">
-		          <a class="dropdown-toggle" data-toggle="dropdown">Page 1 <span class="caret"></span></a>
+		          <a class="dropdown-toggle" data-toggle="dropdown">HTML + CSS <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
-		            <li><a href="#">Page 1-1</a></li>
-		            <li><a href="#">Page 1-2</a></li>
-		            <li><a href="#">Page 1-3</a></li>
+		            <li><a href="https://mestes1530.github.io/amiibohub.github.io/"><span class="glyphicon glyphicon-text-color" aria-hidden="true"></span> amiibo Hub</a></li>
+		            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/HTML%20%2B%20CSS%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
 		          </ul>
 		        </li>
-		        <li><a href="#">Page 2</a></li>
-		        <li><a href="#">Page 3</a></li>
+		        <li class="dropdown">
+		          <a class="dropdown-toggle" data-toggle="dropdown">JavaScript <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="https://mestes1530.github.io/amiibohub.github.io/"><span class="glyphicon glyphicon-text-color" aria-hidden="true"></span> amiibo Hub</a></li>
+		            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/JavaScript%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a class="dropdown-toggle" data-toggle="dropdown">Python <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="http://mitchell.pdxstudents.com/"><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Sticker Slab</a></li>
+		            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/Python%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a class="dropdown-toggle" data-toggle="dropdown">Django <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="http://mitchell.pdxstudents.com/"><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Sticker Slab</a></li>
+		            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/Django%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
+		          </ul>
+		        </li>
+
 		      </ul>
-		      <ul class="nav navbar-nav navbar-right">
+		      <ul class="nav fixed-top navbar-nav navbar-right">
 		        <li><a href="https://github.com/mestes1530"><span class="glyphicon glyphicon-console"></span> GitHub</a></li>
 		        <li><a href="https://www.linkedin.com/in/mitchell-estes/"><span class="glyphicon glyphicon-user"></span> LinkedIn</a></li>
 		      </ul>
 		    </div>
 		  </div>
 		</nav>		
-
 		<!-- LAYOUT OF THE MAIN WEBPAGE AREA -->
 		<div id="main_div">
-			
 			<!-- ABOUT ME JUMBOTRON -->
 			<div class="jumbotron jumbotron-fluid black-box">
 			  <div class="container-fluid">
-			    <h1 class="display-4">Mitchell Estes</h1>
+			  	<img id="my-pic" src="https://media.licdn.com/dms/image/C5603AQG1I6mPI8JhyQ/profile-displayphoto-shrink_200_200/0?e=1553731200&v=beta&t=i2aIceoeoVbA5p4pag_0krVtBBfh6WM_z0u061Ppuho" alt="Mitchell Estes">
+			  	<br>
+			    <h2 class="display-4">Mitchell Estes: Full Stack Web Developer</h2>
 			    <hr>
-			    <h3>Full Stack Web Developer</h3>
 			    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
 			  </div>
 			</div>
-
+			<br>
 			<!-- EDUCATION CARDS -->
 			<div class="row">
 			  <div class="col-sm-6">
 			    <div class="card">
+			      <img class="card-img-top" src="https://static1.squarespace.com/static/545d41e1e4b0f8d97a3ba8e3/t/55d3b3a6e4b0ddce73a16060/1439937461315/" alt="University of Portland">	
 			      <div class="card-body black-box">
-			        <h5 class="card-title">Special title treatment</h5>
+			        <h3 class="card-title">Bachelor's of Science in Computer Science from University of Portland</h3>
 			        <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
-			        <center><a href="https://github.com/estes17" class="btn btn-color"><span class="glyphicon glyphicon-console"></span> GitHub for U.P.</a><a href="#" class="btn btn-color">Go somewhere</a></center>
+			        <center>
+			        	<a href="https://github.com/estes17" class="btn btn-color"><span class="glyphicon glyphicon-console"></span> GitHub from then</a>
+			        	<a href="https://www.up.edu/" class="btn btn-color"><span class="glyphicon glyphicon-education"></span> University of Portland</a>
+			        </center>
 			        <br>
 			      </div>
 			    </div>
 			  </div>
 			  <div class="col-sm-6">
 			    <div class="card">
+		    	  <img class="card-img-top" src="https://static.spacecrafted.com/cb0d364909d24dda9229292f57656d38/i/b56a7d9a43d446b3b7369d83f6a5fb36/1/HeFQid7LQXgcb94xoFfcAXGjoNdCp8TJdfJQL/PDXCodeGuild.png" alt="PDX Code Guild">
 			      <div class="card-body black-box">
-			        <h5 class="card-title">Special title treatment</h5>
+			        <h3 class="card-title">Finished a Full Sack bootcamp course at PDX Code Guild</h3>
 			        <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
-			        <center><a href="https://github.com/mestes1530/class_platypus" class="btn btn-color"><span class="glyphicon glyphicon-console"></span> GitHub for CodeGuild</a><a href="#" class="btn btn-color">Go somewhere</a></center>
+			        <center>
+			        	<a href="https://github.com/mestes1530/class_platypus" class="btn btn-color"><span class="glyphicon glyphicon-console"></span> GitHub from then</a>
+			        	<a href="https://pdxcodeguild.com/" class="btn btn-color"><span class="glyphicon glyphicon-share"></span> PDX Code Guild</a>
+			        </center>
 			        <br>
 			      </div>
 			    </div>
