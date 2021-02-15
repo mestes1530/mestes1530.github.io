@@ -1,152 +1,170 @@
 <!DOCTYPE html>
 <html lang='en'>
-	<head>
-		<title>Mitchell Estes: Full Stack Web Developer</title>
-		<!-- Bootstrap CDN -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>		
-    	<!-- CSS Style Settings -->
-    	<style>
-    	body {
-  			background: url(https://i.imgur.com/NiR3GFY.jpg) no-repeat center center fixed;
-  			-webkit-background-size: cover;
-  			-moz-background-size: cover;
-  			-o-background-size: cover;
-  			background-size: cover;
-  			color: white;
-  			text-shadow: 1px 1px DarkViolet;
-		}
-		#navbar-name {
-			color: white;
-			text-shadow: 2px 2px DarkViolet;
-			font-weight: bold;
-		}
-		#main_div {
-			margin: 5%;
-		}
-		.black-box {
-			color: white;
-			text-shadow: 1px 1px DarkViolet;
-			background-color: rgba(0, 0, 0, 0.7);
-			border-style: outset; 
-		}
-		#my-pic {
-			border: 2px solid DarkViolet;
-  			display: block;
-  			margin-left: auto;
-  			margin-right: auto;
-		}
-		.card-img-top {
-			width: 100%;
-			border: 2px solid DarkViolet;
-		}
-		.card-body {
-			padding: 2%;
-		}
-		.btn-color {
-			color: white;
-			background-color: DarkViolet;
-			border-color: white;
-		}
-    	</style>
-	</head>
-	<body>
-		<nav class="navbar sticky-top navbar-inverse">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
-		      </button>
-		      <a class="navbar-brand" id="navbar-name">Mitchell Estes</a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav">
-		        <li class="dropdown">
-		          <a class="dropdown-toggle" data-toggle="dropdown">HTML + CSS <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="https://mestes1530.github.io/PortlandParks.github.io/"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Portland Parks</a></li>
-		            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/HTML%20%2B%20CSS%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
-		          </ul>
-		        </li>
-		        <li class="dropdown">
-		          <a class="dropdown-toggle" data-toggle="dropdown">JavaScript <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="https://mestes1530.github.io/Tetris_Hacked.github.io/"><span class="glyphicon glyphicon-pawn" aria-hidden="true"></span> Tetris Hacked</a></li>
-		            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/JavaScript%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
-		          </ul>
-		        </li>
-		        <li class="dropdown">
-		          <a class="dropdown-toggle" data-toggle="dropdown">Python <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="http://mitchell.pdxstudents.com/"><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Sticker Slab</a></li>
-		            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/Python%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
-		          </ul>
-		        </li>
-		        <li class="dropdown">
-		          <a class="dropdown-toggle" data-toggle="dropdown">Django <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="http://mitchell.pdxstudents.com/"><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Sticker Slab</a></li>
-		            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/Django%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
-		          </ul>
-		        </li>
+<head>
+    <title>Mitchell Estes: Full Stack Web Developer</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- CSS Style Settings -->
+    <style>
+        body {
+            background: url(https://i.imgur.com/NiR3GFY.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: white;
+            text-shadow: 1px 1px DarkViolet;
+        }
 
-		      </ul>
-		      <ul class="nav fixed-top navbar-nav navbar-right">
-		        <li><a href="https://github.com/mestes1530"><span class="glyphicon glyphicon-console"></span> GitHub</a></li>
-		        <li><a href="https://www.linkedin.com/in/mitchell-estes/"><span class="glyphicon glyphicon-user"></span> LinkedIn</a></li>
-		      </ul>
-		    </div>
-		  </div>
-		</nav>		
-		<!-- LAYOUT OF THE MAIN WEBPAGE AREA -->
-		<div id="main_div">
-			<!-- ABOUT ME JUMBOTRON -->
-			<div class="jumbotron jumbotron-fluid black-box">
-			  <div class="container-fluid">
-			  	<img id="my-pic" src="/Photos/ProfilePic.jpeg" alt="Mitchell Estes">
-			  	<br>
-			    <h2 class="display-4">Mitchell Estes: Software Developer</h2>
-			    <hr>
-			    <p class="lead">Solutions-oriented Software Developer with a strong knowledge of scripting languages programming languages, and data structures. Adept at coding in a variety of languages and in compliance with best practices. Specializes in developing web pages and features for client-facing websites, in addition to fixing front-end issues relating to layout of web pages and debugging websites to correct coding errors.</p>
-			  </div>
-			</div>
-			<br>
-			<!-- EDUCATION CARDS -->
-			<div class="row">
-			  <div class="col-sm-6">
-			    <div class="card">
-			      <img class="card-img-top" src="https://static1.squarespace.com/static/545d41e1e4b0f8d97a3ba8e3/t/55d3b3a6e4b0ddce73a16060/1439937461315/" alt="University of Portland">	
-			      <div class="card-body black-box">
-			        <h3 class="card-title">Bachelor of Science in Computer Science from University of Portland</h3>
-			        <p class="card-text">Gained an in-depth understanding of the entire software engineering process, as well as a proficiency in various programming languages and data structures.</p>
-			        <center>
-			        	<a href="https://github.com/estes17" class="btn btn-color"><span class="glyphicon glyphicon-console"></span> GitHub from then</a>
-			        	<a href="https://www.up.edu/" class="btn btn-color"><span class="glyphicon glyphicon-education"></span> University of Portland</a>
-			        </center>
-			        <br>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col-sm-6">
-			    <div class="card">
-		    	  <img class="card-img-top" src="https://static.spacecrafted.com/cb0d364909d24dda9229292f57656d38/i/b56a7d9a43d446b3b7369d83f6a5fb36/1/HeFQid7LQXgcb94xoFfcAXGjoNdCp8TJdfJQL/PDXCodeGuild.png" alt="PDX Code Guild">
-			      <div class="card-body black-box">
-			        <h3 class="card-title">Completed a Full Stack Bootcamp certification from PDX Code Guild</h3>
-			        <p class="card-text">Participated in an intensive hands-on program learning all aspects of full stack web development using the Django framework.</p>
-			        <center>
-			        	<a href="https://github.com/mestes1530/class_platypus" class="btn btn-color"><span class="glyphicon glyphicon-console"></span> GitHub from then</a>
-			        	<a href="https://pdxcodeguild.com/" class="btn btn-color"><span class="glyphicon glyphicon-share"></span> PDX Code Guild</a>
-			        </center>
-			        <br>
-			      </div>
-			    </div>
-			  </div>
+        #navbar-name {
+            color: white;
+            text-shadow: 2px 2px DarkViolet;
+            font-weight: bold;
+        }
 
-		</div>
-	</body>
+        #main_div {
+            margin: 5%;
+        }
+
+        .black-box {
+            color: white;
+            text-shadow: 1px 1px DarkViolet;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-style: outset;
+        }
+
+        #my-pic {
+            border: 2px solid DarkViolet;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #TechAchademy {
+            width: 100%;
+        }
+
+        .card-img-top {
+            width: 100%;
+            border: 2px solid DarkViolet;
+        }
+
+        .card-body {
+            padding: 2%;
+        }
+
+        .btn-color {
+            color: white;
+            background-color: DarkViolet;
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="navbar-name">Mitchell Estes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">HTML + CSS <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://mestes1530.github.io/PortlandParks.github.io/"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Portland Parks</a></li>
+                            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/HTML%20%2B%20CSS%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">JavaScript <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://mestes1530.github.io/Tetris_Hacked.github.io/"><span class="glyphicon glyphicon-pawn" aria-hidden="true"></span> Tetris Hacked</a></li>
+                            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/JavaScript%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Python <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://mitchell.pdxstudents.com/"><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Sticker Slab</a></li>
+                            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/Python%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Django <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://mitchell.pdxstudents.com/"><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Sticker Slab</a></li>
+                            <li><a href="https://github.com/PdxCodeGuild/class_platypus/tree/master/Code/Mitchell/Django%20Labs"><span class="glyphicon glyphicon-console"></span> More Code</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <ul class="nav fixed-top navbar-nav navbar-right">
+                    <li><a href="https://github.com/mestes1530"><span class="glyphicon glyphicon-console"></span> GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/mitchell-estes/"><span class="glyphicon glyphicon-user"></span> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- LAYOUT OF THE MAIN WEBPAGE AREA -->
+    <div id="main_div">
+        <!-- ABOUT ME JUMBOTRON -->
+        <div class="jumbotron jumbotron-fluid black-box">
+            <div class="container-fluid">
+                <img id="my-pic" src="/Photos/ProfilePic.jpeg" alt="Mitchell Estes">
+                <br>
+                <h2 class="display-4">Mitchell Estes: Software Developer</h2>
+                <hr>
+                <p class="lead">Solutions-oriented Software Developer with a strong knowledge of scripting languages programming languages, and data structures. Adept at coding in a variety of languages and in compliance with best practices. Specializes in developing web pages and features for client-facing websites, in addition to fixing front-end issues relating to layout of web pages and debugging websites to correct coding errors.</p>
+            </div>
+        </div>
+        <br>
+        <!-- CURRENTLY WORKING ON -->
+        <div class="jumbotron jumbotron-fluid black-box">
+            <div class="container-fluid">
+                <img id="TechAchademy" src="https://secure.meetupstatic.com/photos/event/5/f/7/1/600_478884433.jpeg" alt="The Tech Achademy" />
+                <h2 class="display-4">The Tech Achademy</h2>
+                <p>I am currently working through the Mobile App Development course remotly through The Tech Achademy. Check back in 100 days to see included projects from the course or visit my GitHub to see the most recent projects I'm currently working on.</p>
+            </div>
+        </div>
+        <!-- EDUCATION CARDS -->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <img class="card-img-top" src="https://static1.squarespace.com/static/545d41e1e4b0f8d97a3ba8e3/t/55d3b3a6e4b0ddce73a16060/1439937461315/" alt="University of Portland">
+                    <div class="card-body black-box">
+                        <h3 class="card-title">Bachelor of Science in Computer Science from University of Portland</h3>
+                        <p class="card-text">Gained an in-depth understanding of the entire software engineering process, as well as a proficiency in various programming languages and data structures.</p>
+                        <center>
+                            <a href="https://github.com/estes17" class="btn btn-color"><span class="glyphicon glyphicon-console"></span> GitHub from then</a>
+                            <a href="https://www.up.edu/" class="btn btn-color"><span class="glyphicon glyphicon-education"></span> University of Portland</a>
+                        </center>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img class="card-img-top" src="https://static.spacecrafted.com/cb0d364909d24dda9229292f57656d38/i/b56a7d9a43d446b3b7369d83f6a5fb36/1/HeFQid7LQXgcb94xoFfcAXGjoNdCp8TJdfJQL/PDXCodeGuild.png" alt="PDX Code Guild">
+                    <div class="card-body black-box">
+                        <h3 class="card-title">Completed a Full Stack Bootcamp certification from PDX Code Guild</h3>
+                        <p class="card-text">Participated in an intensive hands-on program learning all aspects of full stack web development using the Django framework.</p>
+                        <center>
+                            <a href="https://github.com/mestes1530/class_platypus" class="btn btn-color"><span class="glyphicon glyphicon-console"></span> GitHub from then</a>
+                            <a href="https://pdxcodeguild.com/" class="btn btn-color"><span class="glyphicon glyphicon-share"></span> PDX Code Guild</a>
+                        </center>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
 </html>
